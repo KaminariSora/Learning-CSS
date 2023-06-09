@@ -1,35 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS เบื้องต้น</title>
     <style>
         /* internal embed */
-        p{
-            font-style: italic;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .color{
+        .color {
             background-color: aquamarine;
         }
-        *{
-            background-color: green;
+
+        body {
+            background-image: image-set('images/Screenshot 2023-06-08 001513.png');
+            background-repeat: repeat;
+            background-size: 400px;
+            background-position: center;
+        }
+
+        span {
+            background-color: yellow;
+            width: auto;
+            height: 100px;
+        }
+
+        div {
+            background-color: white;
+            width: auto;
+            /* height: 100px; */
+            border: solid;
+        }
+
+        .box1 {
+            background-color: aquamarine;
+            /* border: solid 10px; */
+            border-top-style: solid;
+            border-left-style: dashed;
+            border-right-style: dashed;
+            border-bottom-style: dotted;
+            border-top-color: red;
+        }
+
+        .box2 {
+            background-color: greenyellow;
+            border: dashed 10px;
+        }
+
+        .box3 {
+            background-color: pink;
+            border: dotted 10px;
+        }
+
+        .box4 {
+            background-color: blueviolet;
+            border: solid aqua 10px;
+            border-radius: 20px;
+        }
+
+        .box5 {
+            background-color: white;
+            border-color: black;
+            border-style: double;
+            border-width: thick;
+
+        }
+
+        .image {
+            height: 100px;
+            width: auto;
+            border: solid burlywood 5px;
+            border-radius: 20px;
+        }
+
+        .box6 {
+            background-color: aquamarine;
+            margin-top: 10px;
+        }
+
+        .box7 {
+            background-color: violet;
+            margin-top: 10px;
+        }
+
+        .box8 {
+            margin-top: 10px;
+            padding: 1%;
+        }
+
+        .box9 {
+            margin: 10px;
+        }
+
+        .box8 img {
+            width: 170px;
+            height: 170px;
+            float: right;
         }
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- inline -->
     <h1 id="css">CSS</h1>
     <h1 id="css">KaminariSora</h1>
     <h1 class="title">CSS</h1>
-    <div class="color">
-        KaminariSora
+    <div class="box1"></div>
+    <hr>
+    <div class="box2"></div>
+    <hr>
+    <div class="box3"></div>
+    <hr>
+    <div class="box4"></div>
+    <hr>
+    <div class="box5"></div>
+    <hr>
+    <img class="image" src="images/Screenshot 2023-06-08 001513.png">
+    <div class="box6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod velit voluptatem ipsa fugit.
+            Nesciunt quo, est voluptate soluta cumque numquam in,
+            illo obcaecati dignissimos voluptatibus suscipit dolores ullam culpa ratione.</p>
     </div>
-    <span class="color">
-        <b class="color">KaminariSora</b> is human
-    </span>
-    <p id="message">Lorem ipsum dolor sit amet.</p>
+    <div class="box7">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quibusdam at quasi velit explicabo
+            perferendis nulla non repellat, molestias cumque ex sit facilis dicta vitae. Recusandae nemo iusto cumque
+            quae.</p>
+    </div>
+    <div class="box8">
+        <p>
+            <img class="first" src="images/Screenshot 2023-05-24 234350.png">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iusto architecto ratione laboriosam odio
+            rerum, aspernatur ab voluptatem, porro magnam vitae, odit reprehenderit rem explicabo omnis amet expedita
+            quod non.
+        </p>
+    </div>
+    <div class="box9">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ipsum. Vero animi nostrum pariatur eos facere
+            nam repellendus fuga voluptatum, quos hic dicta qui vitae velit soluta nobis corporis ducimus.</p>
+    </div>
+    <div class="container">
+        <div id="box1">
+            <h1>title</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro iste quos ipsam ducimus quam
+                exercitationem blanditiis reiciendis ut. Aspernatur maxime ducimus nihil? Quasi alias perspiciatis
+                doloribus magni ducimus dolorem laboriosam!</p>
+        </div>
+        <div id="box2">
+            <h1>title</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro iste quos ipsam ducimus quam
+                exercitationem blanditiis reiciendis ut. Aspernatur maxime ducimus nihil? Quasi alias perspiciatis
+                doloribus magni ducimus dolorem laboriosam!</p>
+        </div>
+        <div id="box3">
+            <h1>title</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro iste quos ipsam ducimus quam
+                exercitationem blanditiis reiciendis ut. Aspernatur maxime ducimus nihil? Quasi alias perspiciatis
+                doloribus magni ducimus dolorem laboriosam!</p>
+        </div>
+    </div>
 </body>
+
 </html>
