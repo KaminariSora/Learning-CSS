@@ -1,14 +1,123 @@
-p#message{
+p#message {
     color: yellowgreen;
     font-size: 50px;
 }
-h1.title{
+
+h1.title {
     color: red;
 }
-h1#css{
+
+h1#css {
     text-decoration: overline;
     text-align: center;
     color: aqua;
     text-decoration-color: blueviolet;
     /* text-decoration: underline; */
+}
+
+a {
+    padding-left: 50%;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    background-image: image-set('images/Screenshot 2023-06-08 001513.png');
+    background-repeat: repeat;
+    background-size: 400px;
+    background-position: center;
+}
+
+span {
+    background-color: yellow;
+    width: auto;
+    height: 100px;
+}
+
+div {
+    background-color: white;
+    /* width: auto; */
+    /* height: 100px; */
+    border: solid;
+}
+
+.box1 {
+    background-color: aquamarine;
+    /* border: solid 10px; */
+    border-top-style: solid;
+    border-left-style: dashed;
+    border-right-style: dashed;
+    border-bottom-style: dotted;
+    border-top-color: red;
+}
+
+.box2 {
+    background-color: greenyellow;
+    border: dashed 10px;
+}
+
+.box3 {
+    background-color: pink;
+    border: dotted 10px;
+}
+
+.box4 {
+    background-color: blueviolet;
+    border: solid aqua 10px;
+    border-radius: 20px;
+}
+
+.box5 {
+    background-color: white;
+    border-color: black;
+    border-style: double;
+    border-width: thick;
+
+}
+
+.image {
+    height: 100px;
+    width: auto;
+    border: solid burlywood 5px;
+    border-radius: 20px;
+}
+
+.box6 {
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+.box7 {
+    background-color: violet;
+    margin-top: 10px;
+}
+
+.box8 {
+    margin-top: 10px;
+    padding: 1%;
+}
+
+.box9 {
+    margin: 10px;
+}
+
+.box8 img {
+    width: 170px;
+    height: 170px;
+    float: right;
+    box-shadow: 10px 10px 10px 5px;
+    opacity: 1;
+}
+
+.box10 {
+    width: 200px;
+    height: 100px;
+    overflow-x: scroll;
 }
