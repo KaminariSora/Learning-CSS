@@ -3,6 +3,9 @@
 }
 .flex-container{
     display: flex;
+    background-color: aqua;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .item{
     background-color: orange;
@@ -12,4 +15,7 @@
     padding: 10px;
     text-align: center;
     margin: 10px;
+}
+.item-2{
+    flex-basis: 500px;
 }
