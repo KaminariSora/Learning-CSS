@@ -1,0 +1,29 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    /* grid-template-columns: 100px 100px 100px; */
+    grid-template-columns: repeat(3,auto);
+}
+.item{
+    padding: 3rem;
+    border: 1px solid green;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: aquamarine;
+}
+.item:first-child{
+    background-color: violet;
+    grid-column: 3/4;
+    /* grid-column-start: 3;
+    grid-column-end: 4;  */
+}
+.item:last-child{
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.image{
+    height: auto;
+    width: 100px;
+}
