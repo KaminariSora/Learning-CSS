@@ -1,0 +1,25 @@
+body{
+    background-image: image-set('images/20210403_173601.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: absolute;
+    color: white;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+header>h1{
+    font-size: 4rem;
+    margin: 1rem;
+}
+/* จริงๆอันนี้คือรูปเดียวกับที่ก้องสอนนะ แต่ทำไมมันกลายเป็นยัดใส่ด้านหน้าของheaderซะหล่ะ */
+header::before{
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+}
