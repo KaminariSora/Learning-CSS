@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(4, 43, 50);
+}
+
+p {
+    background-color: orange;
+}
+
+/* decendant selector */
+div p {
+    background-color: greenyellow;
+    width: 100px;
+}
+
+/* child-selector */
+div>p {
+    background-color: aqua;
+}
+
+a {
+    background-color: orange;
+}
+
+a[target] {
+    background-color: red;
+    color: white;
+    
+}
+
+a[target='_blank'] {
+    background-color: black;
+}
+
+a[target='_self'] {
+    background-color: blueviolet;
+}
+
+input[type="email"] , input[type="text"]{
+    width: 80%;
+    margin-bottom: 5px;
+}   
+
+input[type="submit"]{
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
+
+li:first-child{
+    background-color: orangered;
+    font-size: 1.3rem;
+}
+
+li:nth-child(3){
+    background-color: blueviolet;
+}
+
+li:nth-last-child(3){
+    background-color: cyan;
+}
+
+li:last-child{
+    background-color: chocolate;
+}
