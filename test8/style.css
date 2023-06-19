@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+:root{
+    --width: 40rem;
+    --height: 10rem
+}
+.box{
+    background-color: orange;
+    height: var(--height);
+    width: var(--width);
+    overflow: hidden;
+    /* transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in; */
+    /* transition: background 2s ,width 2s ,border-radius 2s ease-out;  */
+    transition: all 1s ease-in;  
+}
+.box:hover{
+    background-color: green;
+    width: 80rem;
+    height: 20rem;
+    /* border-radius: 50%; */
+}
+.img{
+    display: flex;
+    width: var(--width);
+    height: var(--height);
+    justify-content: center;
+    align-items: center;
+    transition: all 1s linear;
+}
+.img:hover{
+    width: 80rem;
+    height: 20rem;
+}
