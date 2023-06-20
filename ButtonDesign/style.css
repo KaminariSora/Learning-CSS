@@ -3,10 +3,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh   ;
+    height: 100vh;
+    cursor: image-set("Screenshot_20230121_065647.png"),auto;
 }
 .btn{
-    padding: 1.1em 2em;
+    padding: 1.1em 2.2em;
+    margin-right: 50px;
     background: none;
     border: 2px solid #fff;
     font-size: 15px;
