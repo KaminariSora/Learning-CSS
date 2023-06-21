@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    display: flex;
+    /* flex-direction: column; */
+    /* background-color: aqua; */
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    text-align: center;
+}
+
+.search-icon{
+    margin-left: 10px;
+}
+
+.search:hover{
+    cursor: text;
+}
+
+.search-icon:hover{
+    cursor: default;
+}
