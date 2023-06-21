@@ -14,17 +14,32 @@ body{
 }
 
 .search{
+    height: 30px;
+    width: 200px;
     text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .search-icon{
+    height: 30px;
+    width: 50px;
     margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .search:hover{
+    position: relative;
     cursor: text;
+    border: 10px solid yellowgreen;
 }
 
 .search-icon:hover{
     cursor: default;
+    background-color: burlywood;
+}
+
+.search-icon:active{
+    background-color: yellow;
 }
