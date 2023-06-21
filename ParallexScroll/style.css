@@ -134,7 +134,12 @@ section img#mountain_front{
     font-size: 1em;
 }
 
-@media only screen and (max-width:500px){
-    
-    
+@media only screen and (max-width:700px){
+    section{
+        width: 1000px;
+    }
+    div{
+        width: 1000px;
+    }
+
 }
