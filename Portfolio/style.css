@@ -232,6 +232,15 @@ body {
     text-decoration: none;
 }
 
+.instagram-icon {
+    font-size: 42px;
+    color: #C13584;
+    background-color: #ffffff;
+    border: 1px solid white;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    opacity: 0.6; 
+  }
+
 @media (pointer: fine) {
     .cursor {
         display: block;
