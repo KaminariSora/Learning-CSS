@@ -1,0 +1,101 @@
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    position: absolute;
+}
+
+.DisPlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia;
+    /* flex-direction: column; */
+    /* width: 80%;
+    height: 700px; */
+    /* border: 5px solid red; */
+    margin: 50px;
+}
+
+
+.box {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 0% 100% 0% / 100% 40% 100% 0% ;
+    transform: rotate(90deg);
+}
+
+.box-2 {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 0% 100% 0% / 100% 40% 100% 0% ;
+    transform: rotate(0deg);
+}
+
+.box-3 {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 0% 100% 0% / 100% 40% 100% 0% ;
+    transform: rotate(0deg);
+}
+
+.box-4 {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 0% 100% 0% / 100% 40% 100% 0% ;
+    transform: rotate(90deg);
+}
+
+#btn {
+    cursor: pointer;
+}
+
+.wrap:hover {
+    /* transform: rotate(45deg) scale(1.5); */
+    animation: animated 1s linear infinite;
+}
+
+.alone {
+    color: #fff;
+    pointer-events: none;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.showImg {
+    visibility: visible;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,10%);
+}
+
+@keyframes animated {
+    from {
+        transform: rotate(0deg) scale(1.0);
+    }to {
+        transform: rotate(360deg) scale(1.0);
+    }
+}
