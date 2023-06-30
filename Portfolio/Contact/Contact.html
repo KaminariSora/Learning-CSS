@@ -8,27 +8,38 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
+    <header>
+        <a href="https://instagram.com/kaminari_sora_?igshid=NGExMmI2YTkyZg==" target="_blank" class="logo">KaminariSora</a>
+        <ul type="none">
+            <li><a href="/Portfolio/index.html">Home</a></li>
+            <li><a href="/Portfolio/AboutMe.html">About</a></li>
+            <li><a href="/Portfolio/Teams.html">Work</a></li>
+            <li><a href="#" class="active">Contact</a></li>
+        </ul>
+    </header>
     <div class="hero">
-        <form>
+        <form action="https://formsubmit.co/nonthacha.h@gmail.com" method="POST">
             <div class="row">
                 <div class="input-group">
-                    <input type="text" id="name" required>
+                    <input type="text" name="name" id="name" required>
                     <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
                 </div>
                 <div class="input-group">
-                    <input type="text" id="number" required>
+                    <input type="text" name="number" id="number" required>
                     <label for="number"><i class="fa-solid fa-phone"></i> Phone no.</label>
                 </div>
             </div>            
             <div class="input-group">
-                <input type="email" id="email" required>
+                <input type="email" name="email" id="email" required>
                 <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
             </div>
             <div class="input-group">
-                <textarea id="message" rows="8" required></textarea>
+                <textarea id="message" name="message" rows="8" required></textarea>
                 <label for="message"><i class="fa-solid fa-comment"></i> Message</label>
             </div>
             <button type="submit"><i class="fa-solid fa-paper-plane"></i> SUBMIT</button>
+            <input type="hidden" name="_captcha" value="false">
+            <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
         </form>
     </div>
     <script src="contact.js"></script>
