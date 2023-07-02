@@ -2,7 +2,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     font-family: "Poppins", sans-serif;
     background: linear-gradient(135deg, black, #220033);
     padding: 0;
@@ -12,6 +12,7 @@ body {
 #stars {
     z-index: -1;
 }
+
 
 .box {
     width: 100%;
@@ -114,16 +115,16 @@ body {
 }
 
 .navigation_link:hover::before {
-    transform: translate(12px, -12px);
+    /* transform: translate(0px, 0px); */
     color: #ff1744;
     -webkit-text-stroke: 1px #212121;
 }
 
-.navigation_link:hover::after {
+/* .navigation_link:hover::after {
     transform: translate(24px, -24px);
     color: #4dd0e1;
     -webkit-text-stroke: 1px #212121;
-}
+} */
 
 .navigation_link::before,
 .navigation_link::after {
@@ -135,6 +136,18 @@ body {
     z-index: 1;
     transition: 0.5s;
     -webkit-text-stroke: 1px transparent;
+}
+
+.highlight {
+    background: right / 0% 100% no-repeat linear-gradient(#fff,#c1f5ee);
+    color: linear-gradient(#333,#C13584);
+    transition: background-size 500ms;
+}
+/* linear-gradient(#fff,#c1f5ee) */
+.highlight:hover {
+    background: left / 100% 100% no-repeat linear-gradient(#fff,#c1f5ee);
+    color: greenyellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .carousel::before {
