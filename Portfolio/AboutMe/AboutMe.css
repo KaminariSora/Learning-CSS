@@ -60,3 +60,9 @@ header ul li a.active {
     background-color: #fff;
     color: #2b1055;
 }
+
+button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
