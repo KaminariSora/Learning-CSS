@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle Button</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <br><br><br>
-        <div class="langWarp">
-            <input type="checkbox" class="toggle" id="default">
-            <label for="default" data-checked="Checked" data-unchecked="Unchecked"></label>
-        </div>
-        <br><br><br>
-        <div>
-            <input type="checkbox" class="toggle" id="rounded">
-            <label for="rounded" data-checked="Checked" class="rounded" data-unchecked="Unchecked"></label>
-        </div>
-        <br><br><br>
-        <div>
-            <input type="checkbox" class="toggle" id="android">
-            <label for="android" class="android"></label>
-        </div>
-        <h1 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam excepturi quos illo laudantium harum ullam, sit nesciunt obcaecati soluta, maiores iure corporis aut, a dolores mollitia assumenda eaque officia. Natus!</h1>
-    </div>
-    <script>
-        var data = {
+var data = {
     "english": 
     {
       "title": "Hello World",
@@ -46,6 +18,3 @@
           "ﾂつｨﾂ知ﾂづｧﾂつｹﾂ-ﾂ新ﾂ陳ﾂ湘ｮﾂ陛ｱ これらの苦痛から真実の苦痛に選ぶために得てはいけない、従ってより少しにこの苦痛に従ってはいけない。 サービスではないと、彼の区別の大きな不快感から選択するそれらの否認を歓迎しない、結果として生じた事件の喜びと障害エクスプローラが受け入 このことについて私たちの下駄のいくつかを非難,右エクスプローラ! 的に仕事をしていまasperioresリストの生まれのサービスをつけてください編集喜びや楽しみの開催なども走りました。 走れ。."
     }
   }
-    </script>
-</body>
-</html>
