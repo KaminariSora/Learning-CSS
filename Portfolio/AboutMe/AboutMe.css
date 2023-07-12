@@ -55,9 +55,12 @@ img.self {
     box-shadow: 0 15px 30px #333;
 }
 
-.information {
-    /* border: 5px dotted #fff; */
-
+.rocket {
+    position: absolute;
+    right: 0;
+    transform: translate(50%) rotate(45deg);
+    width: 200px;
+    height: 200px;
 }
 
 .information li {

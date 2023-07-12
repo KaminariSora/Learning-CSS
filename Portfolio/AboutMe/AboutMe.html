@@ -23,6 +23,7 @@
         </ul>
     </header>
     <div class="hero">
+        <img src="background/—Pngtree—flying rocket_3718748.png" class="rocket">
         <div class="wrapper">
             <img src="background/Srinakharinwirot_University_Logo.svg.png" class="Logo">
             <div class="text-box">
@@ -33,19 +34,18 @@
             <div class="text-box-information">
                 <img src="self/525558.jpg" class="self">
                 <ul class="information">
-                    <li class="title"><b>Age</b> : 19</li>
-                    <li><b>Nationality</b> : Thai</li>
-                    <li><b>Education</b> : Undergraduate at Srinakharinwirot U.</li>
-                    <li><b>Talent</b> : Working as team, socializing and conversing with people, swimming, drawing etc.
+                    <li class="age"><b>Age</b> : 19</li>
+                    <li class="national"><b>Nationality</b> : Thai</li>
+                    <li class="education"><b>Education</b> : Undergraduate at Srinakharinwirot U.</li>
+                    <li class="talent"><b>Talent</b> : Working as team, socializing and conversing with people, swimming, drawing etc.
                     </li>
                 </ul>
             </div>
         </div>
         <div class="wrapper">
             <div class="text-box">
-                <h3 class="description">My name is Thunder. I am a determined and persistent person. I enjoy learning,
-                    exploring for new
-                    information and constantly trying something new.
+                <h3 class="description">KaminariSora is the name I actually use on social media. My real name is Thunder. Coding is fun for me because it presents numerous problems to solve. Despite encountering various challenges, it is an enjoyable experience. I am a determined and persistent person. I enjoy learning,exploring for new information and constantly trying something new.
+
                 </h3>
             </div>
         </div>
@@ -53,7 +53,7 @@
     <label class="switch">
         <input type="checkbox" id="togBtn">
         <div class="slider round">
-            <span language='japanese' class="on">TH</span>
+            <span language='thai' class="on">TH</span>
             <span language='english' class="off">ENG</span>
         </div>
     </label>
@@ -63,18 +63,27 @@
     </div> -->
     <script>
         document.querySelector('#togBtn').addEventListener('input', (event) => {
-            document.querySelector('.title').textContent = data[event.currentTarget.checked ? 'japanese' : 'english'].title;
-            document.querySelector('.description').textContent = data[event.currentTarget.checked ? 'japanese' : 'english'].description;
+            document.querySelector('.age').textContent = data[event.currentTarget.checked ? 'thai' : 'english'].age;
+            document.querySelector('.national').textContent = data[event.currentTarget.checked ? 'thai' : 'english'].national;
+            document.querySelector('.education').textContent = data[event.currentTarget.checked ? 'thai' : 'english'].education;
+            document.querySelector('.talent').textContent = data[event.currentTarget.checked ? 'thai' : 'english'].talent;
+            document.querySelector('.description').textContent = data[event.currentTarget.checked ? 'thai' : 'english'].description;
         });
 
         var data = {
             "english": {
-                "title": "Age : 19",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium esse eum qufuga, odit modi iure commodi. Voluptates molestias voluptate vel, dignissimos quae dolorum assumendaaccusamus ducimus sed doloremque ratione"
+                "age": "Age : 19",
+                "national" : "Nationality : Thai",
+                "education" : "Education : Undergraduate at Srinakharinwirot U.",
+                "talent" : "Talent : Working as team, socializing and conversing with people, swimming, drawing etc.",
+                "description": "KaminariSora is the name I actually use on social media. My real name is Thunder. Coding is fun for me because it presents numerous problems to solve. Despite encountering various challenges, it is an enjoyable experience. I am a determined and persistent person. I enjoy learning,exploring for new information and constantly trying something new.",
             },
-            "japanese": {
-                "title": "ハロー・ワールド",
-                "description": "ﾂつｨﾂ知ﾂづｧﾂつｹﾂ-ﾂ新ﾂ陳ﾂ湘ｮﾂ陛ｱ これらの苦痛から真実の苦痛に選ぶために得てはいけない、従ってより少しにこの苦痛に従ってはいけない。 サービスではないと、彼の区別の大きな不快感から選択するそれらの否認を歓迎しない、結果として生じた事件の喜びと障害エクスプローラが受け入 このことについて私たちの下駄のいくつかを非難,右エクスプローラ! 的に仕事をしていまasperioresリストの生まれのサービスをつけてください編集喜びや楽しみの開催なども走りました。 走れ。."
+            "thai": {
+                "age": "อายุ : 19",
+                "national" : "สัญชาติ : ไทย",
+                "education" : "การศึกษา : กำลังศึกษาที่มหาวิทยาลัยศรีนครินทรวิโรฒ",
+                "talent" : "พรสวรรค์ : ทำงานเป็นทีม การเข้าสังคมและการสื่อสาร ผมชอบการเรียนรู้แลการค้นคว้าสิ่งใหม่ๆ ว่ายน้ำ วาดรูป ฯลฯ",
+                "description": "KaminariSora เป็นชื่อที่ผมใช้ในโซเชียลมีเดียส่วนชื่อจริงๆนั้นชื่อ 'ธันเดอร์' ผมรักในการศึกษาและค้นคว้าข้อมูลใหม่เพื่อให้ทันต่อโลกและการเขียนโค้ดนั้นเป็นเรื่องที่สนุกสำหรับผมเพราะว่ามันมักจะมีปัญหามาให้แก้ไม่หยุดซึ่งเป็นสิ่งที่น่าท้าทายและน่าสนุกมากๆ"
 
             }
         }
@@ -82,3 +91,7 @@
 </body>
 
 </html>
+
+<!-- 
+    KaminariSora is the name I actually use on social media. My real name is Thunder. Coding is fun for me because it presents numerous problems to solve. Despite encountering various challenges, it is an enjoyable experience. I am a determined and persistent person. I enjoy learning,exploring for new information and constantly trying something new.
+ -->

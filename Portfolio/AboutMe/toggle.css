@@ -117,6 +117,7 @@ input[type=checkbox].toggle:checked + label::before {
     background-color: #ca2222;
     -webkit-transition: .4s;
     transition: .4s;
+    border-radius: 20px;
 }
 
 .slider:before {
@@ -129,6 +130,7 @@ input[type=checkbox].toggle:checked + label::before {
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
+    border-radius: 20px;
 }
 
 input:checked+.slider {
