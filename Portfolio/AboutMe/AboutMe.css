@@ -9,20 +9,26 @@ body {
     background: #485461;
     background-image: linear-gradient(315deg, #485461 0% , #28313b);
     font-family: sans-serif;
-    height: 100vh;
+    height: auto;
     background-image: linear-gradient(rgba(0,0,0,0.7), #220033), url(background/photo-1445905595283-21f8ae8a33d2.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: repeat;
 }
 /* -------
 set up zone
 ---------- */
 
 .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: auto;
+    margin-right: auto;
     margin-top: 100px;
     width: 80%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0));
+    background: linear-gradient(180deg, rgb(255, 255, 255), rgba(162, 155, 155, 0.384));
     backdrop-filter: blur(10px);
 }
 
@@ -30,8 +36,16 @@ set up zone
     position: relative;
     width: 100%;
     margin: 20px auto;
-    overflow: hidden;
+    overflow: visible;
+    margin-top: 0;
+    margin-bottom: 0;
     /* border: 5px solid green; */
+}
+
+.wrapper .self {
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 img.Logo {
@@ -48,7 +62,7 @@ img.self {
     width: 400px;
     max-height: 400px;
     max-width: 100%;
-    float: left;
+    float: center;
     margin-right: auto;
     border: 2px solid #fff;
     border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
@@ -57,7 +71,10 @@ img.self {
 
 .rocket {
     position: absolute;
+    top: 0;
     right: 0;
+    margin: auto;
+    max-width: 200px;
     transform: translate(50%) rotate(45deg);
     width: 200px;
     height: 200px;
@@ -101,7 +118,7 @@ img.self {
 }
 
 .text-box {
-    color: #fff;
+    color: black;
 }
 
 .text-box h2 {
@@ -115,6 +132,7 @@ img.self {
     padding: 10px;
     width: 90%;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 /* -----
