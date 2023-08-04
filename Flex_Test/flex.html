@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexTest</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: aquamarine;
+            margin: 10%;
+            overflow: hidden;
+        }
+
+        .container {
+            border: 5px solid black;
+            display: flex;
+            align-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .parent {
+            margin-top: 20%;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            border: 5px solid red;
+            overflow: hidden;
+        }
+
+        .child {
+            margin: 10px;
+            text-align: center;
+            flex-grow: 1;
+            flex-basis: 300px;
+            border: 2px solid blue;
+        }
+
+        .children {
+            text-align: center;
+            border: 2px solid yellow;
+            background-color: blueviolet;
+        }
+
+        .children:nth-child(1) {
+            flex-grow: 2;
+            flex-basis: 200px;
+            flex-shrink: 1;
+        }
+
+        .children:nth-child(2) {
+            flex-grow: 1;
+            flex-basis: 200px;
+            flex-shrink: 5;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #white {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child" id="red">1</div>
+        <div class="child" id="white">2</div>
+        <div class="child" id="red">3</div>
+        <div class="child" id="white">4</div>
+    </div>
+
+    <div class="parent">
+        <div class="children">HelloWorld</div>
+        <div class="children" id="children-2">HelloWorld</div>
+        <div class="children">HelloWorld</div>
+        <div class="children">HelloWorld</div>
+    </div>
+</body>
+
+</html>
