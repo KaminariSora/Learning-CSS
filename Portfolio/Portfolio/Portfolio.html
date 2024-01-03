@@ -5,21 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/26997adfb2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="../header.css">
 </head>
 <body>
-    <header>
-        <a href="https://instagram.com/kaminari_sora_?igshid=NGExMmI2YTkyZg==" target="_blank" class="logo">KaminariSora</a>
-        <ul type="none">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../AboutMe/AboutMe.html">About</a></li>
-            <li><a href="#" class="active">Portfolio</a></li>
-            <li><a href="../Teams/Teams.html">Teams</a></li>
-            <li><a href="../Contact/Contact.html">Contact</a></li>
-        </ul>
+    <header class="header">
+        <nav class="nav container">
+            <a href="https://instagram.com/kaminari_sora_?igshid=NGExMmI2YTkyZg==" target="_blank" class="logo">KaminariSora</a>
+            
+            <div class="navMenu" id="navMenu">
+                <ul class="navList" type="none">
+                    <li class="listItem"><a class="navLink" href="../index.html">Home</a></li>
+                    <li class="listItem"><a class="navLink" href="../AboutMe/AboutMe.html">About</a></li>
+                    <li class="listItem"><a class="navLink active" href="#">Portfolio</a></li>
+                    <li class="listItem"><a class="navLink" href="../Teams/Teams.html">Teams</a></li>
+                    <li class="listItem"><a class="navLink" href="../Contact/Contact.html">Contact</a></li>
+                </ul>
+                <!-- Close icon -->
+                <div class="navClose" id="navClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+        
+            </div>
+        </nav>
+        <div class="nav_action">
+            <!-- theme button -->
+
+            <!-- Toggle button -->
+            <div class="navToggle" id="navToggle">
+                <i class="fa-brands fa-slack"></i>
+            </div>
+        </div>
     </header>
     <div class="hero">
         <h1 style="color: aqua;">Portfolio</h1>
     </div>
+    <script src="../showMenu.js"></script>
 </body>
 </html>

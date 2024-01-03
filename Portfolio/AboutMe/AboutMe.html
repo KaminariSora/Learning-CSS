@@ -6,32 +6,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <script src="https://kit.fontawesome.com/26997adfb2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="AboutMe.css">
     <link rel="stylesheet" href="toggle.css">
+    <link rel="stylesheet" href="../header.css">
 </head>
 
 <body>
-    <header>
-        <a href="https://instagram.com/kaminari_sora_?igshid=NGExMmI2YTkyZg==" target="_blank"
-            class="logo">KaminariSora</a>
-        <ul type="none">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#" class="active">About</a></li>
-            <li><a href="../Portfolio/Portfolio.html">Portfolio</a></li>
-            <li><a href="../Teams/Teams.html">Teams</a></li>
-            <li><a href="../Contact/Contact.html">Contact</a></li>
-        </ul>
-    </header>
-    <div class="hero">
-        <img src="background/—Pngtree—flying rocket_3718748.png" class="rocket">
-        <div class="wrapper">
-            <img src="background/Srinakharinwirot_University_Logo.svg.png" class="Logo">
-            <div class="text-box">
-                <h2>Srinakharinwirot University (SWU)</h2>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="https://instagram.com/kaminari_sora_?igshid=NGExMmI2YTkyZg==" target="_blank"
+                class="logo">KaminariSora</a>
+
+            <div class="navMenu" id="navMenu">
+                <ul class="navList" type="none">
+                    <li class="listItem"><a class="navLink" href="../index.html">Home</a></li>
+                    <li class="listItem"><a class="navLink active" href="#">About</a></li>
+                    <li class="listItem"><a class="navLink" href="../Portfolio/Portfolio.html">Portfolio</a></li>
+                    <li class="listItem"><a class="navLink" href="../Teams/Teams.html">Teams</a></li>
+                    <li class="listItem"><a class="navLink" href="../Contact/Contact.html">Contact</a></li>
+                </ul>
+                <!-- Close icon -->
+                <div class="navClose" id="navClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+        </nav>
+        <div class="nav_action">
+            <!-- theme button -->
+
+            <!-- Toggle button -->
+            <div class="navToggle" id="navToggle">
+                <i class="fa-brands fa-slack"></i>
             </div>
         </div>
-        <div class="wrapper">
-            <img src="self/525558.jpg" class="self">
+    </header>
+    <!-- container -->
+    <section class="hero">
+        <div class="wrapper" id="imageWrapper">
+            <span>
+                <h1>KaminariSora</h1>
+                <!-- <h1 class="description">KaminariSora is the name I actually use on social media. My real name is Thunder. Coding is fun for me because it presents numerous problems to solve. Despite encountering various challenges, it is an enjoyable experience. I am a determined and persistent person. I enjoy learning, exploring for new information and constantly trying something new.</h1> -->
+            </span>
         </div>
         <div class="wrapper">
             <div class="text-box-information">
@@ -42,18 +60,14 @@
                     <li class="age"><b>Age</b> : 19</li>
                     <li class="national"><b>Nationality</b> : Thai</li>
                     <li class="education"><b>Education</b> : Undergraduate at Srinakharinwirot U.</li>
-                    <li class="talent"><b>Talent</b> : Working as team, socializing and conversing with people, swimming, drawing etc.
+                    <li class="talent"><b>Talent</b> : Working as team, socializing and conversing with people,
+                        swimming, drawing etc.
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="wrapper">
-            <div class="text-box">
-                <h3 class="description">KaminariSora is the name I actually use on social media. My real name is Thunder. Coding is fun for me because it presents numerous problems to solve. Despite encountering various challenges, it is an enjoyable experience. I am a determined and persistent person. I enjoy learning,exploring for new information and constantly trying something new.
-                </h3>
-            </div>
-        </div>
-    </div>
+    </section>
+    <!-- Language switch -->
     <label class="switch">
         <input type="checkbox" id="togBtn">
         <div class="slider round">
@@ -61,35 +75,45 @@
             <span language='english' class="off">ENG</span>
         </div>
     </label>
-    <!-- <div class="language">
-        <input type="checkbox" class="toggle" id="rounded">
-        <label for="rounded" data-checked="Thai" class="rounded" data-unchecked="English"></label>
-    </div> -->
+    <script src="../showMenu.js"></script>
     <script>
-        document.querySelector('#togBtn').addEventListener('input', (event) => {
-            document.querySelector('.age').textContent = data[event.currentTarget.checked ? 'thai' : 'english'].age;
-            document.querySelector('.national').textContent = data[event.currentTarget.checked ? 'thai' : 'english'].national;
-            document.querySelector('.education').textContent = data[event.currentTarget.checked ? 'thai' : 'english'].education;
-            document.querySelector('.talent').textContent = data[event.currentTarget.checked ? 'thai' : 'english'].talent;
-            document.querySelector('.description').textContent = data[event.currentTarget.checked ? 'thai' : 'english'].description;
-        });
+        document.querySelector('#togBtn').addEventListener('input', updateInformation);
 
-        var data = {
+        const data = {
             "english": {
+                "firstName": "First name : Nonthacha",
+                "lastName": "Last name : Huanchitt",
+                "nickname": "Nickname : Thunder",
                 "age": "Age : 19",
-                "national" : "Nationality : Thai",
-                "education" : "Education : Undergraduate at Srinakharinwirot U.",
-                "talent" : "Talent : Working as team, socializing and conversing with people, swimming, drawing etc.",
-                "description": "KaminariSora is the name I actually use on social media. My real name is Thunder. Coding is fun for me because it presents numerous problems to solve. Despite encountering various challenges, it is an enjoyable experience. I am a determined and persistent person. I enjoy learning,exploring for new information and constantly trying something new.",
+                "national": "Nationality : Thai",
+                "education": "Education : Undergraduate at Srinakharinwirot U.",
+                "talent": "Talent : Working as team, socializing and conversing with people, swimming, drawing etc.",
+                "description": "KaminariSora is the name I actually use on social media. My real name is Thunder. Coding is fun for me because it presents numerous problems to solve. Despite encountering various challenges, it is an enjoyable experience. I am a determined and persistent person. I enjoy learning, exploring for new information and constantly trying something new.",
             },
             "thai": {
+                "firstName": "ชื่อ : นนทชา",
+                "lastName": "นามสกุล : หวลจิตต์",
+                "nickname": "ชื่อเล่น : ธันเดอร์",
                 "age": "อายุ : 19",
-                "national" : "สัญชาติ : ไทย",
-                "education" : "การศึกษา : กำลังศึกษาที่มหาวิทยาลัยศรีนครินทรวิโรฒ",
-                "talent" : "พรสวรรค์ : ทำงานเป็นทีม การเข้าสังคมและการสื่อสาร ผมชอบการเรียนรู้แลการค้นคว้าสิ่งใหม่ๆ ว่ายน้ำ วาดรูป ฯลฯ",
+                "national": "สัญชาติ : ไทย",
+                "education": "การศึกษา : กำลังศึกษาที่มหาวิทยาลัยศรีนครินทรวิโรฒ",
+                "talent": "พรสวรรค์ : ทำงานเป็นทีม การเข้าสังคมและการสื่อสาร ผมชอบการเรียนรู้แลการค้นคว้าสิ่งใหม่ๆ ว่ายน้ำ วาดรูป ฯลฯ",
                 "description": "KaminariSora เป็นชื่อที่ผมใช้ในโซเชียลมีเดียส่วนชื่อจริงๆนั้นชื่อ 'ธันเดอร์' ผมรักในการศึกษาและค้นคว้าข้อมูลใหม่เพื่อให้ทันต่อโลกและการเขียนโค้ดนั้นเป็นเรื่องที่สนุกสำหรับผมเพราะว่ามันมักจะมีปัญหามาให้แก้ไม่หยุดซึ่งเป็นสิ่งที่น่าท้าทายและน่าสนุกมากๆ"
-
             }
+        }
+
+        function updateInformation(event) {
+            const language = event.currentTarget.checked ? 'thai' : 'english';
+            const info = data[language];
+
+            document.querySelector('.first-name').textContent = info.firstName;
+            document.querySelector('.last-name').textContent = info.lastName;
+            document.querySelector('.nickname').textContent = info.nickname;
+            document.querySelector('.age').textContent = info.age;
+            document.querySelector('.national').textContent = info.national;
+            document.querySelector('.education').textContent = info.education;
+            document.querySelector('.talent').textContent = info.talent;
+            document.querySelector('.description').textContent = info.description;
         }
     </script>
 </body>
