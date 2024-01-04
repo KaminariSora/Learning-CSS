@@ -47,7 +47,7 @@
 
 .workImg {
     width: 200px;
-    filter: grayscale(0.5);
+    filter: grayscale(1);
     transition: filter .5s, transform .5s;
     aspect-ratio: 1;
 }
