@@ -7,11 +7,94 @@
 
 .hero {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-image: linear-gradient(rgba(0,0,0,0.7), #220033), url(background/photo-1445905595283-21f8ae8a33d2.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+/* PORTFOLIO */
+
+.sectionTitle {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.workContainer {
+    row-gap: 2rem;
+    /* border: 2px solid white; */
+}
+
+.workCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workLink {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.workImg {
+    width: 200px;
+    filter: grayscale(0.5);
+    transition: filter .5s, transform .5s;
+    aspect-ratio: 1;
+}
+
+.workTitle {
+    color: #fff;
+}
+.workSubtitle {
+    color: floralwhite;
+}
+
+/* .workIcon {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    font-size: 2rem;
+    color: #fff;
+    transition: transform .4s;
+} */
+
+.workLink:hover .workImg {
+    transform: scale(1.1);
+    filter: none;
+}
+
+/* .workLink:hover .workIcon {
+    transform:  translate(.5rem, -.5rem) rotate(-30deg);
+} */
+
+.workTitle {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+/* mobile device */
+/* @media screen and (max-width:767px) {
+    .workContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 320px);
+    }
+} */
+
+/* Big device */
+
+@media screen and (min-width: 768px) {
+    .workContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+    }
 }
