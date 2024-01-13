@@ -35,6 +35,28 @@ body {
     /* border: 10px solid #4dd0e1; */
 }
 
+.download {
+    position: absolute;
+    left: 25%;
+    bottom: 8%;
+    transform: translate(-50%,50%);
+    font-size: clamp(1rem, 2vw, 2rem);
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background: #0392ba;
+    z-index: 1000000;
+}
+
+.download i {
+    padding-left: 10px;
+}
+
+.download:hover {
+    color: #fff;
+    background-color: #00bfff;
+}
+
 .info {
     position: relative;
     height: 100vh;
@@ -290,6 +312,11 @@ body {
         margin: auto;
         padding: 0;
         list-style: none;
+    }
+
+    .navigation_link::after,
+    .navigation_link::before {
+        content: '';
     }
 }
 
