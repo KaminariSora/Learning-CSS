@@ -1,0 +1,81 @@
+* {
+    font-family:'Poppins' , sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), #220033), url("/Portfolio/Portfolio/background/photo-1445905595283-21f8ae8a33d2.jpg");
+    background-size: contain;
+    background-repeat: none;
+    /* overflow-x: hidden; */
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #220033;
+}
+
+.container {
+    width: 100%;
+    border: 2px solid green;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header h1 {
+    color: #fff;
+    line-height: 5rem;
+    margin: auto;
+    pointer-events: none;
+}
+
+.back {
+    margin: 20px;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.back:hover {
+    color: #333;
+    border-radius: 25%;
+    background: linear-gradient(rgb(0, 208, 255), #ffffff);
+}
+
+.wrapper {
+    margin: 150px auto;
+    width: 70%;
+    min-width: 320px;
+}
+
+img {
+    max-width: 320px;
+    float: left;
+}
+
+.text-box {
+    color: #fff;
+    padding-top: 50px;
+}
+
+.text-box h2 {
+    font-size: 3.5rem;
+}
+
+.text-box p {
+    font-size: 1.75rem;
+}
